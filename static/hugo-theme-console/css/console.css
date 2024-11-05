@@ -227,7 +227,7 @@ figure {
 
 @media only screen and (max-width: 850px) {
     .site-name {
-        width: 2ch;
+        width: 4ch;
         overflow: clip;
         display: inline-block;
     }
