@@ -45,10 +45,10 @@
     --invert-font-color: #222225;
     --secondary-color: #a3abba;
     --tertiary-color: #a3abba;
-    --primary-color: #62c4ff;
+    --primary-color: #c8778a;
     --error-color: #ff3c74;
     --progress-bar-background: #3f3f44;
-    --progress-bar-fill: #62c4ff;
+    --progress-bar-fill: #c8778a;
     --input-style: solid;
 }
 
@@ -186,7 +186,7 @@ figure {
     grid-gap: 1em;
     grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit,
-            minmax(calc(var(--page-width) / 4), 1fr));
+    minmax(calc(var(--page-width) / 4), 1fr));
 }
 
 .terminal-prompt::after {
