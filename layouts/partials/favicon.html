@@ -1,5 +1,9 @@
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    {{ $favicon := os.Stat "static/favicon.ico" }}
+    <link rel="icon" type="image/png" href="{{ "/favicon-96x96.png" | absURL }}?{{ $favicon.ModTime.Unix }}" sizes="96x96" />
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | absURL }}?{{ $favicon.ModTime.Unix }}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absURL }}?{{ $favicon.ModTime.Unix }}" />
     <meta name="apple-mobile-web-app-title" content="fryl.dev" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="manifest" href="{{ "/site.webmanifest" | absURL }}?{{ $favicon.ModTime.Unix }}" />
